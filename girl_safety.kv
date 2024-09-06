@@ -1,0 +1,18 @@
+BoxLayout:
+    orientation: 'vertical'
+
+    MapView:
+        id: mapview
+        zoom: 13
+        lat: 37.7749
+        lon: -122.4194
+
+    BoxLayout:
+        size_hint_y: None
+        height: 50
+        Button:
+            text: "Mark Unsafe Area"
+            on_press: app.mark_unsafe_area()
+        Button:
+            text: "Send SOS"
+            on_press: app.send_sos()
